@@ -18,14 +18,58 @@
         </div>
 
         <div class="form-place">
-            <div class="form">
+            <p class="form-text">
+                Where are these pens? Why are we born? Why do we die? Why do we spend so much time between wearing digital watches? For all the answers stick your thumb to the stars. And don't forget to bring a towel!
+            </p>
                 <form action="">
-                    
+                    <div class="all-forms">
+                        <div class="middle-part">
+                            <div class="forms names">
+                                <div class="form-comb">
+                                    <label for="first-name">First Name:</label>
+                                    <input type="text" name="first-name" id="first-name" placeholder="First Name" required>
+                                </div>
+                                <div class="form-comb">
+                                    <label for="last-name">Last Name:</label>
+                                    <input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            
+                            <div class="forms informations">
+                                <div class="form-comb">
+                                    <label for="email">E-Mail:</label>
+                                    <input type="email" name="e-mail" id="email" placeholder="E-Mail" required>
+                                </div>
+                                <div class="form-comb">
+                                    <label for="phone">Phone Number:</label>
+                                    <input type="number" name="phone-number" id="phone" placeholder="Phone Number" required minlength="6">
+                                </div>
+                            </div>
+                            
+                            <div class="forms password">
+                                <div class="form-comb">
+                                    <label for="password">Create Password:</label>
+                                    <input type="password" name="password" id="password" placeholder="Create Password" required minlength="8">
+                                </div>
+                                <div class="form-comb">
+                                    <label for="re-password">Repeat Password:</label>
+                                    <input type="password" name="repeat-password" id="re-password" placeholder="Repeat Password" required minlength="8">
+                                    <span class="not-matching"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-part">
+                            <button type="submit" class="createBtn">Create Account</button>
+                            <p>Already have an account? <a href="#">Log in</a></p>
+                        </div>
+                    </div>
+
                 </form>
 
-            </div>
+
         </div>
     </div>
 
+    <script src="main.js"></script>
 </body>
 </html>
